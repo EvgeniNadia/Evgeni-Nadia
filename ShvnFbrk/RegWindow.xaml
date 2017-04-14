@@ -1,0 +1,25 @@
+﻿<Window x:Class="ShvnFbrk.RegWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RegWindow" Height="500" Width="700">
+    <Grid>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="358,205,0,0" VerticalAlignment="Top" Width="75"/>
+        <PasswordBox x:Name="ConfPass_Box" HorizontalAlignment="Left" Height="30" Margin="358,150,0,0" VerticalAlignment="Top" Width="190"/>
+        <PasswordBox x:Name="Pass_box" HorizontalAlignment="Left" Height="31" Margin="358,114,0,0" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name="Login_text" HorizontalAlignment="Left" Height="28" Margin="358,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name="PhoneKlient" HorizontalAlignment="Left" Height="28" Margin="110,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167"/>
+        <TextBox x:Name="NameClient" HorizontalAlignment="Left" Height="28" Margin="110,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.122"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="FamKlient" HorizontalAlignment="Left" Height="28" Margin="110,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167"/>
+        <TextBox x:Name="OtchKlient" HorizontalAlignment="Left" Height="28" Margin="110,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167"/>
+
+    </Grid>
+</Window>

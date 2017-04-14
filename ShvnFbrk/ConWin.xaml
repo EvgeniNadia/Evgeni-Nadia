@@ -1,0 +1,106 @@
+﻿<Window x:Class="ShvnFbrk.ConWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ConWin" Height="500" Width="700">
+    <Grid>
+        <ComboBox
+    		x:Name="ServersCB"
+    		Text="Выберите доступные сервера"
+    		Width="518"
+    		Height="25"
+    		Grid.Column="0"
+    		Grid.Row="0"
+    		HorizontalAlignment="Left"
+    		VerticalAlignment="Top"
+    		Margin="86,126,0,0"
+    		RenderTransformOrigin="0.5,0.5"
+    		GotMouseCapture="ServersCB_GotMouseCapture" />
+        <TextBox
+    		Height="23"
+    		Width="518"
+    		Grid.Column="0"
+    		Grid.Row="0"
+    		HorizontalAlignment="Left"
+    		VerticalAlignment="Top"
+    		Margin="86,190,0,0"
+    		x:Name="UserName_text" />
+        <Label
+    		Height="79"
+    		Content="Подключение к БД"
+    		FontSize="50"
+    		Grid.Column="0"
+    		Grid.Row="0"
+    		HorizontalAlignment="Stretch"
+    		VerticalAlignment="Top"
+    		Margin="81,8,45,0"
+    		FontFamily="Times New Roman" />
+        <Label
+    		Width="303"
+    		Height="26"
+    		FontFamily="Times New Roman"
+    		Grid.Column="0"
+    		Grid.Row="0"
+    		HorizontalAlignment="Left"
+    		VerticalAlignment="Top"
+    		Margin="86,156,0,0"
+    		Content="Введите логин от источника данных" />
+        <ComboBox
+    		Width="518"
+    		Height="25"
+    		Grid.Column="0"
+    		Grid.Row="0"
+    		HorizontalAlignment="Left"
+    		VerticalAlignment="Top"
+    		Margin="86,320,0,0"
+    		x:Name="SelectDBCB"
+    		GotMouseCapture="SelectDBCB_GotMouseCapture"
+    		SelectionChanged="SelectDBCB_SelectionChanged">
+            <Button
+    			Content="Button"
+    			Width="75"
+    			Height="23" />
+        </ComboBox>
+        <Label
+    		FontFamily="Times New Roman"
+    		Width="303"
+    		Height="26"
+    		Grid.Column="0"
+    		Grid.Row="0"
+    		HorizontalAlignment="Left"
+    		VerticalAlignment="Top"
+    		Margin="86,221,0,0"
+    		Content="Введите пароль от источника данных" />
+        <Label
+    		FontFamily="Times New Roman"
+    		Width="303"
+    		Height="26"
+    		Grid.Column="0"
+    		Grid.Row="0"
+    		HorizontalAlignment="Left"
+    		VerticalAlignment="Top"
+    		Margin="86,286,0,0"
+    		Content="Выберите базу данных" />
+        <Button
+    		Height="49"
+    		Width="219"
+    		Grid.Column="0"
+    		Grid.Row="0"
+    		HorizontalAlignment="Left"
+    		VerticalAlignment="Bottom"
+    		Margin="207,0,0,33"
+    		Content="Подключиться"
+    		x:Name="button1"
+    		Click="button1_Click"
+    		RenderTransformOrigin="0.5,0.5" />
+        <PasswordBox
+    		Grid.Column="0"
+    		Grid.Row="0"
+    		HorizontalAlignment="Stretch"
+    		VerticalAlignment="Top"
+    		Margin="89,252,87,0"
+    		Width="516"
+    		Height="23"
+    		x:Name="DSPass" />
+
+    </Grid>
+</Window>
